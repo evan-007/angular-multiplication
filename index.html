@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="tables">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>Multiplication Table</title>
+  </head>
+  <body>
+    <table ng-controller="MultiplicationCtrl">
+      <tr ng-repeat="numberA in numbers">
+        <td ng-repeat="numberB in numbers">
+          {{ numberA * numberB }}
+        </td>
+      </tr>
+    </table>  
+  </body>
+</html>
